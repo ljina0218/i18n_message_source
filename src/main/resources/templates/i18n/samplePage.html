@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>samplePage</title>
+</head>
+<body>
+	
+	<h1 th:text="#{hello}"></h1>
+	<hr>
+	<h1 style="color:red;" th:text="${#messages.msg('hello')}"></h1>
+	<h1 style="color:red;" th:text="${#messages.msgOrNull('hello')}"></h1>
+	<hr>
+	<h1 style="color:blue;" th:text="${#messages.msg('hello2')}"></h1>
+	<h1 style="color:blue;" th:text="${#messages.msgOrNull('hello2')}"></h1>
+	
+</body>
+</html>
